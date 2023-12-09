@@ -1,0 +1,6 @@
+../src2/app/src/driver_lcd.c:19:6:INIT_LCD	2
+../src2/app/src/driver_lcd.c:35:6:CLEAR_LCD	1
+../src2/app/src/driver_lcd.c:50:6:CMD_lcd	1
+../src2/app/src/driver_lcd.c:75:6:CHAR_LCD	1
+../src2/app/src/driver_lcd.c:98:6:STRING_LCD	2
+../src2/app/src/driver_lcd.c:111:6:LCD_XY	3

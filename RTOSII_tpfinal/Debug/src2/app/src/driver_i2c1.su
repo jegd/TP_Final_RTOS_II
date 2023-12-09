@@ -2,4 +2,4 @@
 ../src2/app/src/driver_i2c1.c:62:6:HAL_I2C_MasterTxCpltCallback	16	static
 ../src2/app/src/driver_i2c1.c:72:13:i2c_error_callback	4	static
 ../src2/app/src/driver_i2c1.c:84:6:i2c_enviar	32	static
-../src2/app/src/driver_i2c1.c:113:10:scan_adress	16	static
+../src2/app/src/driver_i2c1.c:120:10:scan_adress	16	static

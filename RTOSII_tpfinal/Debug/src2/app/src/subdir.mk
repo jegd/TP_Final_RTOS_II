@@ -6,15 +6,18 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../src2/app/src/app.c \
-../src2/app/src/driver_i2c1.c 
+../src2/app/src/driver_i2c1.c \
+../src2/app/src/driver_lcd.c 
 
 OBJS += \
 ./src2/app/src/app.o \
-./src2/app/src/driver_i2c1.o 
+./src2/app/src/driver_i2c1.o \
+./src2/app/src/driver_lcd.o 
 
 C_DEPS += \
 ./src2/app/src/app.d \
-./src2/app/src/driver_i2c1.d 
+./src2/app/src/driver_i2c1.d \
+./src2/app/src/driver_lcd.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -24,7 +27,7 @@ src2/app/src/%.o src2/app/src/%.su src2/app/src/%.cyclo: ../src2/app/src/%.c src
 clean: clean-src2-2f-app-2f-src
 
 clean-src2-2f-app-2f-src:
-	-$(RM) ./src2/app/src/app.cyclo ./src2/app/src/app.d ./src2/app/src/app.o ./src2/app/src/app.su ./src2/app/src/driver_i2c1.cyclo ./src2/app/src/driver_i2c1.d ./src2/app/src/driver_i2c1.o ./src2/app/src/driver_i2c1.su
+	-$(RM) ./src2/app/src/app.cyclo ./src2/app/src/app.d ./src2/app/src/app.o ./src2/app/src/app.su ./src2/app/src/driver_i2c1.cyclo ./src2/app/src/driver_i2c1.d ./src2/app/src/driver_i2c1.o ./src2/app/src/driver_i2c1.su ./src2/app/src/driver_lcd.cyclo ./src2/app/src/driver_lcd.d ./src2/app/src/driver_lcd.o ./src2/app/src/driver_lcd.su
 
 .PHONY: clean-src2-2f-app-2f-src
 

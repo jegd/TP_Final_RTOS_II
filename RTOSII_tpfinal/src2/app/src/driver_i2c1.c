@@ -110,6 +110,13 @@ bool i2c_enviar(uint8_t *buffer, size_t size, uint16_t address) {
 	}
 	return true;
 }
+/*!
+ * @brief Escanea las direcciones de I2C
+ *
+ * @param[void]
+ *
+ * @return uint16_t Direccion escaneada
+ */
 uint16_t scan_adress(void) {
 	uint8_t address;
 	for (address = 0; address < max_slave; address++) {

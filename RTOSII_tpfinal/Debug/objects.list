@@ -41,6 +41,7 @@
 "./Supporting_Functions/Src/supporting_Functions.o"
 "./src2/app/src/app.o"
 "./src2/app/src/driver_i2c1.o"
+"./src2/app/src/driver_lcd.o"
 "./src2/lib/src/delayAntibloqueo.o"
 "./src2/lib/src/eboard.o"
 "./src2/lib/src/eringbuffer.o"
