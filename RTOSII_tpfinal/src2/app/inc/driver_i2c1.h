@@ -12,15 +12,6 @@
 #include <stdint.h>
 #include "stm32f4xx_hal.h"
 
-#define scan_address_length     30
-#define trial_scan               3
-#define timeout_scan            10
-#define timeout_transmit       100
-#define max_slave              128
-#define desplazamiento_7_bits    1
-#define one_byte                 1
-
-
 void gpio_i2c_config(void);
 bool i2c_init(void);
 void i2c_error_callback(void);

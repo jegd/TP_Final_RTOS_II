@@ -1,5 +1,5 @@
-../src2/app/src/driver_i2c1.c:52:6:Hal_i2c_errorCallback	1
-../src2/app/src/driver_i2c1.c:62:6:HAL_I2C_MasterTxCpltCallback	1
-../src2/app/src/driver_i2c1.c:72:13:i2c_error_callback	1
-../src2/app/src/driver_i2c1.c:84:6:i2c_enviar	8
-../src2/app/src/driver_i2c1.c:120:10:scan_adress	4
+../src2/app/src/driver_i2c1.c:63:6:Hal_i2c_errorCallback	1
+../src2/app/src/driver_i2c1.c:73:6:HAL_I2C_MasterTxCpltCallback	1
+../src2/app/src/driver_i2c1.c:83:13:i2c_error_callback	1
+../src2/app/src/driver_i2c1.c:95:6:i2c_enviar	8
+../src2/app/src/driver_i2c1.c:131:10:scan_adress	4

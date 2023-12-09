@@ -5255,7 +5255,6 @@ Discarded input sections
  .group         0x0000000000000000        0xc ./src2/app/src/app.o
  .group         0x0000000000000000        0xc ./src2/app/src/app.o
  .group         0x0000000000000000        0xc ./src2/app/src/app.o
- .group         0x0000000000000000        0xc ./src2/app/src/app.o
  .text          0x0000000000000000        0x0 ./src2/app/src/app.o
  .data          0x0000000000000000        0x0 ./src2/app/src/app.o
  .bss           0x0000000000000000        0x0 ./src2/app/src/app.o
@@ -5345,7 +5344,6 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x20 ./src2/app/src/app.o
  .debug_macro   0x0000000000000000       0x22 ./src2/app/src/app.o
  .debug_macro   0x0000000000000000       0x10 ./src2/app/src/app.o
- .group         0x0000000000000000        0xc ./src2/app/src/driver_i2c1.o
  .group         0x0000000000000000        0xc ./src2/app/src/driver_i2c1.o
  .group         0x0000000000000000        0xc ./src2/app/src/driver_i2c1.o
  .group         0x0000000000000000        0xc ./src2/app/src/driver_i2c1.o
@@ -5571,7 +5569,6 @@ Discarded input sections
  .group         0x0000000000000000        0xc ./src2/app/src/driver_lcd.o
  .group         0x0000000000000000        0xc ./src2/app/src/driver_lcd.o
  .group         0x0000000000000000        0xc ./src2/app/src/driver_lcd.o
- .group         0x0000000000000000        0xc ./src2/app/src/driver_lcd.o
  .text          0x0000000000000000        0x0 ./src2/app/src/driver_lcd.o
  .data          0x0000000000000000        0x0 ./src2/app/src/driver_lcd.o
  .bss           0x0000000000000000        0x0 ./src2/app/src/driver_lcd.o
@@ -5579,19 +5576,19 @@ Discarded input sections
                 0x0000000000000000       0x38 ./src2/app/src/driver_lcd.o
  .text.CLEAR_LCD
                 0x0000000000000000        0xe ./src2/app/src/driver_lcd.o
- .text.CMD_lcd  0x0000000000000000       0x74 ./src2/app/src/driver_lcd.o
+ .text.CMD_lcd  0x0000000000000000       0x70 ./src2/app/src/driver_lcd.o
  .text.CHAR_LCD
-                0x0000000000000000       0x74 ./src2/app/src/driver_lcd.o
+                0x0000000000000000       0x70 ./src2/app/src/driver_lcd.o
  .text.STRING_LCD
                 0x0000000000000000       0x2a ./src2/app/src/driver_lcd.o
  .text.LCD_XY   0x0000000000000000       0x42 ./src2/app/src/driver_lcd.o
- .debug_info    0x0000000000000000      0x72d ./src2/app/src/driver_lcd.o
- .debug_abbrev  0x0000000000000000      0x1cf ./src2/app/src/driver_lcd.o
+ .debug_info    0x0000000000000000      0x71d ./src2/app/src/driver_lcd.o
+ .debug_abbrev  0x0000000000000000      0x1ce ./src2/app/src/driver_lcd.o
  .debug_aranges
                 0x0000000000000000       0x48 ./src2/app/src/driver_lcd.o
  .debug_rnglists
                 0x0000000000000000       0x31 ./src2/app/src/driver_lcd.o
- .debug_macro   0x0000000000000000      0x232 ./src2/app/src/driver_lcd.o
+ .debug_macro   0x0000000000000000      0x22d ./src2/app/src/driver_lcd.o
  .debug_macro   0x0000000000000000      0xaa8 ./src2/app/src/driver_lcd.o
  .debug_macro   0x0000000000000000       0x22 ./src2/app/src/driver_lcd.o
  .debug_macro   0x0000000000000000       0x22 ./src2/app/src/driver_lcd.o
@@ -5637,10 +5634,9 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x248 ./src2/app/src/driver_lcd.o
  .debug_macro   0x0000000000000000       0xba ./src2/app/src/driver_lcd.o
  .debug_macro   0x0000000000000000      0x126 ./src2/app/src/driver_lcd.o
- .debug_macro   0x0000000000000000       0x2e ./src2/app/src/driver_lcd.o
  .debug_macro   0x0000000000000000       0xbe ./src2/app/src/driver_lcd.o
- .debug_line    0x0000000000000000      0x901 ./src2/app/src/driver_lcd.o
- .debug_str     0x0000000000000000    0xcc4e6 ./src2/app/src/driver_lcd.o
+ .debug_line    0x0000000000000000      0x8ff ./src2/app/src/driver_lcd.o
+ .debug_str     0x0000000000000000    0xcc462 ./src2/app/src/driver_lcd.o
  .comment       0x0000000000000000       0x44 ./src2/app/src/driver_lcd.o
  .debug_frame   0x0000000000000000       0xe0 ./src2/app/src/driver_lcd.o
  .ARM.attributes
@@ -7981,7 +7977,7 @@ LOAD C:/ST/STM32CubeIDE_1.12.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_rnglists
                 0x00000000000014fb       0x43 ./src2/lib/src/euart.o
 
-.debug_macro    0x0000000000000000    0x27076
+.debug_macro    0x0000000000000000    0x2703a
  .debug_macro   0x0000000000000000      0x31f ./Core/Src/freertos.o
  .debug_macro   0x000000000000031f      0xaa8 ./Core/Src/freertos.o
  .debug_macro   0x0000000000000dc7      0x174 ./Core/Src/freertos.o
@@ -8122,20 +8118,18 @@ LOAD C:/ST/STM32CubeIDE_1.12.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_macro   0x00000000000257f0      0x233 ./Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.o
  .debug_macro   0x0000000000025a23      0x1c0 ./Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o
  .debug_macro   0x0000000000025be3      0x3ec ./Supporting_Functions/Src/supporting_Functions.o
- .debug_macro   0x0000000000025fcf      0x462 ./src2/app/src/app.o
- .debug_macro   0x0000000000026431       0x16 ./src2/app/src/app.o
- .debug_macro   0x0000000000026447       0x16 ./src2/app/src/app.o
- .debug_macro   0x000000000002645d       0x34 ./src2/app/src/app.o
- .debug_macro   0x0000000000026491      0x486 ./src2/app/src/driver_i2c1.o
- .debug_macro   0x0000000000026917       0x2e ./src2/app/src/driver_i2c1.o
- .debug_macro   0x0000000000026945       0xd0 ./src2/app/src/driver_i2c1.o
- .debug_macro   0x0000000000026a15      0x447 ./src2/lib/src/eboard.o
- .debug_macro   0x0000000000026e5c       0x16 ./src2/lib/src/eboard.o
- .debug_macro   0x0000000000026e72       0x16 ./src2/lib/src/eboard.o
- .debug_macro   0x0000000000026e88       0x7f ./src2/lib/src/eringbuffer.o
- .debug_macro   0x0000000000026f07      0x16f ./src2/lib/src/euart.o
+ .debug_macro   0x0000000000025fcf      0x463 ./src2/app/src/app.o
+ .debug_macro   0x0000000000026432       0x16 ./src2/app/src/app.o
+ .debug_macro   0x0000000000026448       0x16 ./src2/app/src/app.o
+ .debug_macro   0x000000000002645e      0x4ab ./src2/app/src/driver_i2c1.o
+ .debug_macro   0x0000000000026909       0xd0 ./src2/app/src/driver_i2c1.o
+ .debug_macro   0x00000000000269d9      0x447 ./src2/lib/src/eboard.o
+ .debug_macro   0x0000000000026e20       0x16 ./src2/lib/src/eboard.o
+ .debug_macro   0x0000000000026e36       0x16 ./src2/lib/src/eboard.o
+ .debug_macro   0x0000000000026e4c       0x7f ./src2/lib/src/eringbuffer.o
+ .debug_macro   0x0000000000026ecb      0x16f ./src2/lib/src/euart.o
 
-.debug_line     0x0000000000000000    0x21f25
+.debug_line     0x0000000000000000    0x21f26
  .debug_line    0x0000000000000000      0xa18 ./Core/Src/freertos.o
  .debug_line    0x0000000000000a18      0xddf ./Core/Src/main.o
  .debug_line    0x00000000000017f7      0x90c ./Core/Src/stm32f4xx_hal_msp.o
@@ -8165,10 +8159,10 @@ LOAD C:/ST/STM32CubeIDE_1.12.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_line    0x000000000001d318      0x9be ./Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o
  .debug_line    0x000000000001dcd6      0xb7a ./Supporting_Functions/Src/supporting_Functions.o
  .debug_line    0x000000000001e850      0xca4 ./src2/app/src/app.o
- .debug_line    0x000000000001f4f4      0xd32 ./src2/app/src/driver_i2c1.o
- .debug_line    0x0000000000020226      0xfb1 ./src2/lib/src/eboard.o
- .debug_line    0x00000000000211d7      0x643 ./src2/lib/src/eringbuffer.o
- .debug_line    0x000000000002181a      0x70b ./src2/lib/src/euart.o
+ .debug_line    0x000000000001f4f4      0xd33 ./src2/app/src/driver_i2c1.o
+ .debug_line    0x0000000000020227      0xfb1 ./src2/lib/src/eboard.o
+ .debug_line    0x00000000000211d8      0x643 ./src2/lib/src/eringbuffer.o
+ .debug_line    0x000000000002181b      0x70b ./src2/lib/src/euart.o
 
 .debug_str      0x0000000000000000    0xe0bfa
  .debug_str     0x0000000000000000    0xd1ace ./Core/Src/freertos.o
@@ -8227,9 +8221,9 @@ LOAD C:/ST/STM32CubeIDE_1.12.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
                                        0xb452 (size before relaxing)
  .debug_str     0x00000000000e01c7       0x6d ./Supporting_Functions/Src/supporting_Functions.o
                                       0xd5ece (size before relaxing)
- .debug_str     0x00000000000e0234      0x1ed ./src2/app/src/app.o
-                                      0xd5a28 (size before relaxing)
- .debug_str     0x00000000000e0421      0x144 ./src2/app/src/driver_i2c1.o
+ .debug_str     0x00000000000e0234      0x173 ./src2/app/src/app.o
+                                      0xd59ae (size before relaxing)
+ .debug_str     0x00000000000e03a7      0x1be ./src2/app/src/driver_i2c1.o
                                       0xd5ff3 (size before relaxing)
  .debug_str     0x00000000000e0565      0x4b7 ./src2/lib/src/eboard.o
                                       0xd6137 (size before relaxing)

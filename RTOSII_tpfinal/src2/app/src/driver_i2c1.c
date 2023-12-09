@@ -30,6 +30,17 @@
 #define ENTER_CRITICAL_()	taskENTER_CRITICAL()
 #define EXIT_CRITICAL_()	taskEXIT_CRITICAL()
 
+
+
+#define scan_address_length     30
+#define trial_scan               3
+#define timeout_scan            10
+#define timeout_transmit       100
+#define max_slave              128
+#define desplazamiento_7_bits    1
+#define one_byte                 1
+
+
 typedef struct {
 	uint8_t buffer[I2C_BUFFER_SIZE];
 	size_t len;
