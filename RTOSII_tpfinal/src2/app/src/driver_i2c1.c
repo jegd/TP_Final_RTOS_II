@@ -48,11 +48,11 @@ typedef struct {
 	bool error;
 } i2c_tx_t;
 
+static i2c_tx_t i2c_tx;
+
 extern I2C_HandleTypeDef hi2c1;
 
-static i2c_tx_t i2c_tx;
-//static 	I2C_GPIO_DEF i2c_gpio;
-bool flag = 1;
+
 /*!
  * @brief Callback del error I2C.
  *
@@ -71,7 +71,7 @@ void Hal_i2c_errorCallback(I2C_HandleTypeDef *hi2c) {
  * @return Función del tipo void.
  */
 void HAL_I2C_MasterTxCpltCallback(I2C_HandleTypeDef *hi2c) {
-	flag = true;
+	i2c_tx.enable = true;
 }
 /*!
  * @brief Función para declarar por el usuario y manejar errores
@@ -84,6 +84,31 @@ __weak void i2c_error_callback(void) {
 	return;
 }
 /*!
+ * @brief Copia el buffer de usuario a un buffer del driver
+ *
+ * @param[uint8_t *] buffer		Puntero al buffer a transmitir
+ * @param[size_t]	size		Tamaño de lo que se quiere transmitir
+ *
+ * @return bool true si es que se envió correctamente
+ */
+bool cambiar_buffer(uint8_t *buffer, size_t size) {
+	ENTER_CRITICAL_();
+	i2c_tx.len=0;
+	if(i2c_tx.enable == 1 && size > 0 && size<I2C_BUFFER_SIZE && i2c_tx.error != 1)
+	{
+		for(uint8_t i=0;i<size;i++)
+		{
+			i2c_tx.buffer[i]=*buffer;
+			i2c_tx.len++;
+			buffer++;
+			return 0;
+		}
+	}
+	EXIT_CRITICAL_();
+	return 1;
+}
+
+/*!
  * @brief Función para declarar por el usuario y manejar errores
  *
  * @param[uint8_t *] buffer		Puntero al buffer a transmitir
@@ -95,14 +120,18 @@ __weak void i2c_error_callback(void) {
 bool i2c_enviar(uint8_t *buffer, size_t size, uint16_t address) {
 	if (NULL == buffer)
 		i2c_error_callback();
+
+	if(!cambiar_buffer(buffer,size))
+		i2c_error_callback();
+
 	ENTER_CRITICAL_();
-	if (size <= I2C_BUFFER_SIZE && flag == 1 && size > 0) {
+	if (i2c_tx.len <= I2C_BUFFER_SIZE && i2c_tx.enable == 1 && size > 0) {
 		HAL_StatusTypeDef status = HAL_I2C_Master_Transmit_IT(I2C_HAL_HANDLE_,
-				address, buffer, size);
+				address, i2c_tx.buffer, size);
 		EXIT_CRITICAL_();
 		switch (status) {
 		case HAL_OK:
-			flag = false;
+			i2c_tx.enable=false;
 			break;
 		case HAL_ERROR:
 			i2c_error_callback();
