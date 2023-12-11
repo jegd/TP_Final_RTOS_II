@@ -1,16 +1,19 @@
-/*
- * RGB.h
+/** @file RGB.h
+ *  @Created on: Dic 11, 2023
+ *  @Authors:  Anthony  Maisincho              N°SIU e2011
+ *             Jesus    Gonzales               N°SIU e2006
  *
- *  Created on: Dec 10, 2023
- *      Author: Jesus
+ *  @brief RGB driver
+ *
  */
 
 #ifndef APP_INC_RGB_H_
 #define APP_INC_RGB_H_
-
+/***************************************INCLUDES***************************************/
 #include "stm32f4xx_hal.h"
 #include "cmsis_os.h"
 #include "stdbool.h"
+/***************************************DEFINES***************************************/
 typedef enum {
 	RED_,
 	GREEN_,
@@ -33,7 +36,6 @@ typedef enum {
 	ON,
 	BLINK
 }state_t;
-
 typedef enum {
 	RED,
 	GREEN,
@@ -43,7 +45,6 @@ typedef enum {
 	CIAN,
 	WHITE
 }color_t;
-
 typedef struct{
 	led_t* LED_RED_RGB;
 	led_t* LED_GREEN_RGB;
@@ -53,8 +54,7 @@ typedef struct{
 	bool task_blink;
 	QueueHandle_t cola_led_RGB;
 } RGB;
-
-
+/***************************************FUNCTIONS***************************************/
 void RGB_GPIOs_init(void);
 void RGB_change_state(state_t state);
 void RGB_change_color(color_t color);
