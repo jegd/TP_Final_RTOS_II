@@ -50,6 +50,8 @@ typedef struct{
 	led_t* LED_BLUE_RGB;
 	state_t	RGB_state;
 	color_t RGB_color;
+	bool task_blink;
+	QueueHandle_t cola_led_RGB;
 } RGB;
 
 

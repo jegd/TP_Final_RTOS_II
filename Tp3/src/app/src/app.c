@@ -27,15 +27,16 @@ void vTask_Leds_RGB(void *argument)
 {
 
 	RGB_GPIOs_init();
+	RGB_change_state(ON);
 	RGB_change_color(RED);
+	RGB_change_state(ON);
 	RGB_change_color(BLUE);
 	RGB_change_color(GREEN);
-	RGB_change_color(YELLOW);
-	RGB_change_color(WHITE);
-	RGB_change_color(CIAN);
-	RGB_change_color(PURPLE);
-	//HAL_GPIO_WritePin
-	vTaskDelay(100);
+	RGB_change_state(BLINK);
+	//RGB_change_state(ON);
+	vTaskDelay(10000);
+	RGB_change_state(ON);
+	RGB_change_color(BLUE);
 	while(1)
 	{
 
