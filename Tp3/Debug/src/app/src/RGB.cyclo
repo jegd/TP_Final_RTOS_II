@@ -1,0 +1,6 @@
+../src/app/src/RGB.c:24:6:change_state	1
+../src/app/src/RGB.c:29:6:RGB_GPIOs_init	1
+../src/app/src/RGB.c:38:6:update_color_RGB	8
+../src/app/src/RGB.c:82:6:update_state_RGB	5
+../src/app/src/RGB.c:99:6:RGB_change_color	1
+../src/app/src/RGB.c:105:6:RGB_change_state	1

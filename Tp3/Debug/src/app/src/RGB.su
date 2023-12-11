@@ -1,0 +1,6 @@
+../src/app/src/RGB.c:24:6:change_state	16	static
+../src/app/src/RGB.c:29:6:RGB_GPIOs_init	4	static
+../src/app/src/RGB.c:38:6:update_color_RGB	16	static
+../src/app/src/RGB.c:82:6:update_state_RGB	16	static
+../src/app/src/RGB.c:99:6:RGB_change_color	16	static
+../src/app/src/RGB.c:105:6:RGB_change_state	16	static

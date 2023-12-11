@@ -1,0 +1,2 @@
+../src/app/src/app.c:26:6:vTask_Leds_RGB	16	static
+../src/app/src/app.c:50:6:app_init	24	static,ignoring_inline_asm
