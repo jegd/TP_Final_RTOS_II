@@ -58,5 +58,7 @@ typedef struct{
 void RGB_GPIOs_init(void);
 void RGB_change_state(state_t state);
 void RGB_change_color(color_t color);
+color_t actual_color(void);
+state_t actual_state(void);
 
 #endif /* APP_INC_RGB_H_ */

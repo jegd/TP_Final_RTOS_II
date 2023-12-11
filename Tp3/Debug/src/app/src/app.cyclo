@@ -1,2 +1,5 @@
-../src/app/src/app.c:26:6:vTask_Leds_RGB	1
-../src/app/src/app.c:51:6:app_init	2
+../src/app/src/app.c:37:6:vTask_Leds_RGB	2
+../src/app/src/app.c:56:6:vTask_Leds_RGB_2	2
+../src/app/src/app.c:73:6:vTask_Leds_RGB_3	2
+../src/app/src/app.c:91:6:vTask_dia	2
+../src/app/src/app.c:106:6:app_init	5

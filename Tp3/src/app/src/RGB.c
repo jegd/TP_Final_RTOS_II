@@ -133,24 +133,33 @@ static void blink_mode(RGB* led_RGB)
 	{
 	case RED:
 		led_RGB->LED_RED_RGB->state_led=!(led_RGB->LED_RED_RGB->state_led);
+		led_RGB->LED_BLUE_RGB->state_led=OFF_;
+		led_RGB->LED_GREEN_RGB->state_led=OFF_;
 			break;
 	case BLUE:
 		led_RGB->LED_BLUE_RGB->state_led=!(led_RGB->LED_BLUE_RGB->state_led);
+		led_RGB->LED_RED_RGB->state_led=OFF_;
+		led_RGB->LED_GREEN_RGB->state_led=OFF_;
 			break;
 	case GREEN:
 		led_RGB->LED_GREEN_RGB->state_led=!(led_RGB->LED_GREEN_RGB->state_led);
+		led_RGB->LED_BLUE_RGB->state_led=OFF_;
+		led_RGB->LED_RED_RGB->state_led=OFF_;
 			break;
 	case YELLOW:
 		led_RGB->LED_RED_RGB->state_led=!(led_RGB->LED_RED_RGB->state_led);
 		led_RGB->LED_GREEN_RGB->state_led=!(led_RGB->LED_GREEN_RGB->state_led);
+		led_RGB->LED_BLUE_RGB->state_led=OFF_;
 			break;
 	case PURPLE:
 		led_RGB->LED_RED_RGB->state_led=!(led_RGB->LED_RED_RGB->state_led);
 		led_RGB->LED_BLUE_RGB->state_led=!(led_RGB->LED_BLUE_RGB->state_led);
+		led_RGB->LED_GREEN_RGB->state_led=OFF_;
 			break;
 	case CIAN:
 		led_RGB->LED_BLUE_RGB->state_led=!(led_RGB->LED_BLUE_RGB->state_led);
 		led_RGB->LED_GREEN_RGB->state_led=!(led_RGB->LED_GREEN_RGB->state_led);
+		led_RGB->LED_RED_RGB->state_led=OFF_;
 			break;
 	case WHITE:
 		led_RGB->LED_RED_RGB->state_led=!(led_RGB->LED_RED_RGB->state_led);
@@ -293,3 +302,22 @@ void RGB_change_state(state_t state)
 	led_RGB_1.RGB_state=state;
 	update_state_RGB(&led_RGB_1);
 }
+/*!
+ * @brief Return the current color of the RGB led
+ *
+ * @return color_t current color
+ */
+color_t actual_color(void)
+{
+	return led_RGB_1.RGB_color;
+}
+/*!
+ * @brief Return the current state of the RGB led
+ *
+ * @return state_t current color
+ */
+state_t actual_state(void)
+{
+	return led_RGB_1.RGB_state;
+}
+
